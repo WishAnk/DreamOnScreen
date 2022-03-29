@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Réservation : Etape 1</title>
+    <link rel="icon" href="images/logo.png" />
+    <meta name="description" content="Réservation">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!-- Fonts -->
+    <!-- Font awesome - icon font -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Roboto -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <!-- jQuery UI -->
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <!-- Mobile menu -->
+    <link href="css/gozha-nav.css" rel="stylesheet" />
+    <!-- Select -->
+    <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+    <!-- Swiper slider -->
+    <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+
+    <!-- Custom -->
+    <link href="style3.css" rel="stylesheet" />
+
+    <!-- Modernizr -->
+    <script src="js/external/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> 
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>		
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header class="header-wrapper">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/logo.png">
+                </a>
+
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              
+                        </span>
+                        </span>
+                    </a>
+                    <div class="control-panel">
+                        <div class="auth auth--home">
+                            <div class="auth__show">
+                                <span class="auth__image">
+                          <img alt="" src="images/321.png">
+                        </span>
+                            </div>
+                            <a href="#" class="btn btn--sign btn--singin">
+                          Moi
+                      </a>
+                            <ul class="auth__function">
+                                <li><a href="#" class="auth__function-item">Favoris</a></li>
+                                <li><a href="#" class="auth__function-item">Tickets réservés</a></li>
+                                <li><a href="#" class="auth__function-item">Points de fidélité</a></li>
+                                <li><a href="#" class="auth__function-item">Paramètres</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+        </header>
+
+        <!-- Search bar -->
+        <div class="search-wrapper">
+            <div class="container container--add">
+                <form id='search-form' method='get' class="search">
+                    <input type="text" class="search__field" placeholder="Chercher..">
+                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
+                        <option value="1" selected='selected'>Par titre</option>
+                        <option value="2">Par année</option>
+                        <option value="3">Par producteur</option>
+                        <option value="4">Par titre</option>
+                        <option value="5">Par année</option>
+                    </select>
+                    <button type='submit' class="btn btn-md btn--danger search__button">chercher </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main content -->
+
+        <section class="container">
+            <div class="order-container">
+                <div class="order">
+                    <img class="order__images" alt='' src="images/tickets.png">
+                    <p class="order__title">Réservez un ticket<br><span class="order__descript">et amusez-vous bien au cinéma 💛</span></p>
+                </div>
+            </div>
+            <div class="order-step-area">
+                <div class="order-step first--step">1. Quoi, Où et Quand</div>
+            </div>
+
+            <h2 class="page-heading heading--outcontainer">Choisir un film</h2>
+        </section>
+
+        <div class="choose-film">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--First Slide-->
+                    <div class="swiper-slide" data-film='The Fifth Estate'>
+                        <div class="film-images">
+                            <img alt='' src="images/15.png">
+                        </div>
+                        <p class=" choose-film__title ">The Fifth Estate</p>
+                    </div>
+
+                    <!--Second Slide-->
+                    <div class="swiper-slide " data-film='Ender’s Game'>
+                        <div class="film-images ">
+                            <img alt='' src="images/16.png">
+                        </div>
+                        <p class="choose-film__title ">Ender’s Game</p>
+                    </div>
+
+                    <!--Third Slide-->
+                    <div class="swiper-slide " data-film='About Time'>
+                        <div class="film-images ">
+                            <img alt='' src="images/17.png">
+                        </div>
+                        <p class="choose-film__title ">About Time</p>
+                    </div>
+
+                    <!--Four Slide-->
+                    <div class="swiper-slide " data-film='Last Vegas'>
+                        <div class="film-images ">
+                            <img alt='' src="images/18.png">
+                        </div>
+                        <p class="choose-film__title ">Last Vegas</p>
+                    </div>
+
+                    <!--Five Slide-->
+                    <div class="swiper-slide " data-film='The Hunger Games: Cathing Fire'>
+                        <div class="film-images ">
+                            <img alt='' src="images/19.png">
+                        </div>
+                        <p class="choose-film__title ">The Hunger Games: Cathing Fire</p>
+                    </div>
+
+                    <!--Six Slide-->
+                    <div class="swiper-slide " data-film='The Counselor'>
+                        <div class="film-images ">
+                            <img alt='' src="images/20.png">
+                        </div>
+                        <p class="choose-film__title ">The Counselor</p>
+                    </div>
+
+                    <!--Seven Slide-->
+                    <div class="swiper-slide " data-film='Free Birds'>
+                        <div class="film-images ">
+                            <img alt='' src="images/21.png">
+                        </div>
+                        <p class="choose-film__title ">Free Birds</p>
+                    </div>
+
+                    <!--Eight Slide-->
+                    <div class="swiper-slide " data-film='Thor: The Dark World'>
+                        <div class="film-images ">
+                            <img alt='' src="images/22.png">
+                        </div>
+                        <p class="choose-film__title ">Thor: The Dark World</p>
+                    </div>
+
+                    <!--Nine Slide-->
+                    <div class="swiper-slide " data-film='The Book Thief'>
+                        <div class="film-images ">
+                            <img alt='' src="images/23.png">
+                        </div>
+                        <p class="choose-film__title ">The Book Thief</p>
+                    </div>
+
+                    <!--Ten Slide-->
+                    <div class="swiper-slide " data-film='The Wolf of Wall Street'>
+                        <div class="film-images ">
+                            <img alt='' src="images/24.png">
+                        </div>
+                        <p class="choose-film__title ">The Wolf of Wall Street</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container ">
+            <div class="col-sm-12 ">
+                <div class="choose-indector choose-indector--film ">
+                    <strong>Vous avez choisi: </strong><span class="choosen-area "></span>
+                </div>
+
+                <h2 class="page-heading ">Ville et Date</h2>
+
+                <div class="choose-container choose-container--short ">
+                    <form id='select' class="select " method='get'>
+                        <select name="select_item " id="select-sort " class="select__sort " tabindex="0 ">
+                            <option value="1 " selected='selected'>Rabat</option>
+                            <option value="2 ">Casablanca</option>
+                            <option value="3 ">Marrakesh</option>
+                            <option value="4 ">Tanger</option>
+                            <option value="5 ">Fes</option>
+                            <option value="3 ">Meknes</option>
+                            <option value="4 ">Tetouan</option>
+                        </select>
+                    </form>
+
+                    <div class="datepicker ">
+                        <span class="datepicker__marker "><i class="fa fa-calendar "></i>Date</span>
+                        <input type="text " id="datepicker " value='05/07/2021' class="datepicker__input ">
+                    </div>
+                </div>
+
+                <h2 class="page-heading ">Veuillez choisir un temps</h2>
+
+                <div class="time-select time-select--wide ">
+                    <div class="time-select__group group--first ">
+                        <div class="col-sm-3 ">
+                            <p class="time-select__place ">Megarama</p>
+                        </div>
+                        <ul class="col-sm-6 items-wrap ">
+                            <li class="time-select__item " data-time='09:40'>09:40</li>
+                            <li class="time-select__item " data-time='13:45'>13:45</li>
+                            <li class="time-select__item " data-time='15:45'>15:45</li>
+                            <li class="time-select__item " data-time='19:50'>19:50</li>
+                            <li class="time-select__item " data-time='21:50'>21:50</li>
+                        </ul>
+                    </div>
+
+                    <div class="time-select__group ">
+                        <div class="col-sm-3 ">
+                            <p class="time-select__place ">CineAtlas</p>
+                        </div>
+                        <ul class="col-sm-6 items-wrap ">
+                            <li class="time-select__item " data-time='10:45'>10:45</li>
+                            <li class="time-select__item " data-time='16:00'>16:00</li>
+                            <li class="time-select__item " data-time='19:00'>19:00</li>
+                            <li class="time-select__item " data-time='21:15'>21:15</li>
+                            <li class="time-select__item " data-time='23:00'>23:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="time-select__group ">
+                        <div class="col-sm-3 ">
+                            <p class="time-select__place ">Renaissance</p>
+                        </div>
+                        <ul class="col-sm-6 items-wrap ">
+                            <li class="time-select__item " data-time='09:00'>09:00</li>
+                            <li class="time-select__item " data-time='11:00'>11:00</li>
+                            <li class="time-select__item " data-time='13:00'>13:00</li>
+                            <li class="time-select__item " data-time='15:00'>15:00</li>
+                            <li class="time-select__item " data-time='17:00'>17:00</li>
+                            <li class="time-select__item " data-time='19:00'>19:00</li>
+                            <li class="time-select__item " data-time='21:00'>21:00</li>
+                            <li class="time-select__item " data-time='23:00'>23:00</li>
+                            <li class="time-select__item " data-time='01:00'>01:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="time-select__group ">
+                        <div class="col-sm-3 ">
+                            <p class="time-select__place ">Tanagra</p>
+                        </div>
+                        <ul class="col-sm-6 items-wrap ">
+                            <li class="time-select__item " data-time='10:45'>10:45</li>
+                            <li class="time-select__item " data-time='16:00'>16:00</li>
+                            <li class="time-select__item " data-time='19:00'>19:00</li>
+                            <li class="time-select__item " data-time='21:15'>21:15</li>
+                            <li class="time-select__item " data-time='23:00'>23:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="time-select__group group--last ">
+                        <div class="col-sm-3 ">
+                            <p class="time-select__place ">Cinephilia</p>
+                        </div>
+                        <ul class="col-sm-6 items-wrap ">
+                            <li class="time-select__item " data-time='17:45'>17:45</li>
+                            <li class="time-select__item " data-time='21:30'>21:30</li>
+                            <li class="time-select__item " data-time='02:20'>00:20</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="choose-indector choose-indector--time ">
+                    <strong>Vous avez choisi: </strong><span class="choosen-area "></span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="clearfix "></div>
+
+        <form id='film-and-time' class="booking-form " method='get' action='booking2.html'>
+            <input type='text' name='choosen-movie' class="choosen-movie ">
+
+            <input type='text' name='choosen-city' class="choosen-city ">
+            <input type='text' name='choosen-date' class="choosen-date ">
+
+            <input type='text' name='choosen-cinema' class="choosen-cinema ">
+            <input type='text' name='choosen-time' class="choosen-time ">
+
+
+            <div class="booking-pagination ">
+                <a href="# " class="booking-pagination__prev hide--arrow ">
+                    <span class="arrow__text arrow--prev "></span>
+                    <span class="arrow__info "></span>
+                </a>
+                <a href="booking2.html " class="booking-pagination__next ">
+                    <span class="arrow__text arrow--next ">Etape Suivante</span>
+                    <span class="arrow__info ">Choisir votre place</span>
+                </a>
+            </div>
+
+        </form>
+
+        <div class="clearfix "></div>
+
+        <footer class="footer-wrapper ">
+            <section class="container ">
+                <div class="col-xs-4 col-md-2 footer-nav ">
+                    <ul class="nav-link ">
+                        <li><a href="contact.html " class="nav-link__item ">Contactez-nous</a></li>
+                        <li><a href=" " class="nav-link__item ">A propos de nous</a></li>
+                        <li><a href="# " class="nav-link__item ">Termes d'utilisation</a></li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6 ">
+                    <div class="footer-info ">
+                        <p class="heading-special--small ">Dream On Screen<br><span class="title-edition "> Dans les réseaux Sociaux</span></p>
+
+                        <div class="social ">
+                            <a href='#' class="social__variant fa fa-facebook "></a>
+                            <a href='#' class="social__variant fa fa-twitter "></a>
+                            <a href='#' class="social__variant fa fa-instagram "></a>
+                        </div>
+
+                        <div class="clearfix "></div>
+                        <p class="copy ">&copy;Dream On Screen, 2021. Tous les droits sont réservés.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        </div>
+
+
+        <!-- JavaScript-->
+        <!-- jQuery 1.9.1-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js "></script>
+        <script>
+            window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js "><\/script>')
+        </script>
+        <!-- Migrate -->
+        <script src="js/external/jquery-migrate-1.2.1.min.js "></script>
+        <!-- jQuery UI -->
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js "></script>
+        <!-- Bootstrap 3-->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js "></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js "></script>
+        <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js "></script>
+        <!-- Swiper slider -->
+        <script src="js/external/idangerous.swiper.min.js "></script>
+
+        <!-- Form element -->
+        <script src="js/external/form-element.js "></script>
+        <!-- Form validation -->
+        <script src="js/form.js "></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js "></script>
+
+        <script type="text/javascript ">
+            $(document).ready(function() {
+                init_BookingOne();
+            });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Megarama</title>
+    <link rel="icon" href="images/logo.png" />
+    <meta name="description" content="Dream Os Screen is a platfrom that allows users to choose the convinient cinema and movie of their choice and lets him co">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!-- Fonts -->
+    <!-- Font awesome - icon font -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Roboto -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <!-- jQuery UI -->
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <!-- Mobile menu -->
+    <link href="css/gozha-nav.css" rel="stylesheet" />
+    <!-- Select -->
+    <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+    <!-- Swiper slider -->
+    <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+
+    <!-- Custom -->
+    <link href="style3.css" rel="stylesheet" />
+
+    <!-- Modernizr -->
+    <script src="js/external/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> 
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>		
+    <![endif]-->
+</head>
+
+<body class="single-cin">
+    <div class="wrapper">
+
+        <!-- Header section -->
+        <header class="header-wrapper">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/logo.png">
+                </a>
+
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                        </span>
+                    </a>
+
+
+                    <!-- Additional header buttons / Auth and direct link to booking-->
+
+                    <div class="control-panel">
+                        <div class="auth auth--home">
+                            <div class="auth__show">
+                                <span class="auth__image">
+                              <img alt="" src="images/321.png">
+                            </span>
+                            </div>
+                            <a href="#" class="btn btn--sign btn--singin">
+                              Moi
+                            </a>
+                            <ul class="auth__function">
+                                <li><a href="#" class="auth__function-item">Favoris</a></li>
+                                <li><a href="#" class="auth__function-item">Tickets réservés</a></li>
+                                <li><a href="#" class="auth__function-item">Points de fidélité</a></li>
+                                <li><a href="#" class="auth__function-item">Paramètres</a></li>
+                            </ul>
+                        </div>
+                        <a onclick="window.location.href = 'booking1.html';" class="btn btn-md btn--warning btn--book btn-control--home login-window">Réserver ticket !</a>
+                    </div>
+
+            </div>
+        </header>
+
+        <!-- Search bar -->
+        <div class="search-wrapper">
+            <div class="container container--add">
+                <form id='search-form' method='get' class="search">
+                    <input type="text" class="search__field" placeholder="Vous cherchez...">
+                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
+                        <option value="1" selected='selected'>Par titre</option>
+                        <option value="2">Par location</option>
+                        <option value="3">Par acteur</option>
+                        <option value="4">Par cinema</option>
+                        <option value="5">Par catégorie</option>
+                    </select>
+                    <button type='submit' class="btn btn-md btn--danger search__button">Chercher</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <section class="cinema-container">
+            <div class="cinema cinema--full">
+                <p class="cinema__title">Megarama</p>
+                <div class="cinema__rating">3.9</div>
+                <div class="cinema__gallery">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--First Slide-->
+                            <div class="swiper-slide">
+                                <img alt='' src="images/15.png">
+                            </div>
+
+                            <!--Second Slide-->
+                            <div class="swiper-slide">
+                                <img alt='' src="images/16.png">
+                            </div>
+
+                            <!--Third Slide-->
+                            <div class=" swiper-slide ">
+                                <img alt='' src="images/17.png ">
+                            </div>
+
+                            <!--Four Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/18.png ">
+                            </div>
+
+                            <!--Five Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/19.png">
+                            </div>
+
+                            <!--Six Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/20.png">
+                            </div>
+
+                            <!--Seven Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/21.png">
+                            </div>
+
+                            <!--Eight Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/22.png">
+                            </div>
+
+                            <!--Nine Slide-->
+                            <div class="swiper-slide ">
+                                <img alt='' src="images/23.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cinema__info ">
+                    <p class="cinema__info-item "><strong>Addresse:</strong> Arribat Center, immeuble 17 ,numéro, Altbtal, 09, Avenue Al Abtal, Rabat</p>
+                    <p class="cinema__info-item "><strong>Téléphone:</strong> +212 24 21 25 14 36</p>
+                    <p class="cinema__info-item "><strong>Site officiel:</strong><a href="http://megarama.ma/index-maroc.html " target="_blank "> megarama.ma</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="share share--centered ">
+                <div class="addthis_toolbox addthis_default_style ">
+                    <a class="addthis_button_facebook_like " fb:like:layout="button_count "></a>
+                    <a class="addthis_button_tweet "></a>
+                    <a class="addthis_button_google_plusone " g:plusone:size="medium "></a>
+                </div>
+            </div>
+            <div class="tabs tabs--horisontal">
+                <!-- Nav tabs -->
+                <div class="container">
+                    <ul class="nav nav-tabs" id="hTab">
+                        <li><a href="#movie1" data-toggle="tab">Films</a></li>
+                        <li><a href="#comment1" data-toggle="tab">Commentaires</a></li>
+                        <li class="active"><a href="#map1" data-toggle="tab">Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="movie1">
+                        <div class="container">
+                            <div class="movie-time-wrap">
+
+                                <div class="datepicker">
+                                    <span class="datepicker__marker"><i class="fa fa-calendar"></i>Date</span>
+                                    <input type="text" id="datepicker" value='21/05/2021' class="datepicker__input">
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">4.1</span>
+                                                    <img alt='' src="images/7.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Raya et le dernier dragon  (2021)  </a>
+
+                                                <p class="movie__time">107 min</p>
+
+                                                <p class="movie__option"><a href="#">Aventure </a> | <a href="# ">Action</a> | <a href="# ">Comédie</a></p>
+                                            </div>
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">4.8</span>
+                                                    <img alt='' src="images/8.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Wonder Woman 1984 (2020)  </a>
+
+                                                <p class="movie__time">151 min</p>
+
+                                                <p class="movie__option"><a href="#">Action</a> | <a href="# ">Aventure</a> | <a href="# ">Fantastique</a></p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">4.9</span>
+                                                    <img alt='' src="images/9.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Tom & Jerry (2021)</a>
+
+                                                <p class="movie__time">101 min</p>
+
+                                                <p class="movie__option"><a href="#">Animation</a> | <a href="# ">Aventure</a> | <a href="# ">Comédie</a></p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">5.0</span>
+                                                    <img alt='' src="images/10.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Sherlock Holmes 3 (2021) </a>
+
+                                                <p class="movie__time">112 min</p>
+
+                                                <p class="movie__option"><a href="#">Action</a> | <a href="# ">Policier</a> | <a href="# ">Thriller</a> | <a href="#">Fantazy</a></p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">4.3</span>
+                                                    <img alt='' src="images/11.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">2067 (2021) </a>
+
+                                                <p class="movie__time">114 min</p>
+
+                                                <p class="movie__option"><a href="#">Science-fiction</a></p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">5.0</span>
+                                                    <img alt='' src="images/12.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Black Widow (2021)</a>
+
+                                                <p class="movie__time">133 min</p>
+
+                                                <p class="movie__option"><a href="#">Action </a> | <a href="# ">Aventure</a> | <a href="#">Drama</a></p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                                <div class="clearfix"></div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- Movie variant with time -->
+                                    <div class="movie movie--time">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="movie__images">
+                                                    <span class="movie__rating">4.9</span>
+                                                    <img alt='' src="images/13.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-7">
+                                                <a href='movie-page-left.html' class="movie__title">Jungle Cruise (2021) </a>
+
+                                                <p class="movie__time">90 min</p>
+
+                                                <p class="movie__option">
+                                                    <a href="#">Aventure</a> | <a href="# ">Fantastique </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="time-select">
+                                                <ul class="items-wrap">
+                                                    <li class="time-select__item" data-time='09:40'>09:40</li>
+                                                    <li class="time-select__item" data-time='13:45'>13:45</li>
+                                                    <li class="time-select__item" data-time='15:45'>15:45</li>
+                                                    <li class="time-select__item" data-time='19:50'>19:50</li>
+                                                    <li class="time-select__item" data-time='21:50'>21:50</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Movie variant with time -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="comment1">
+                        <div class="container">
+                            <div class="comment-wrapper">
+                                <form id="comment-form" class="comment-form" method='post'>
+                                    <textarea class="comment-form__text" placeholder='Ajoutez votre commentaire...'></textarea>
+                                    <button type='submit' class="btn btn-md btn--danger comment-form__btn">ajouter commentaire</button>
+                                </form>
+
+                                <div class="comment-sets comment--light">
+
+                                    <div class="comment">
+                                        <div class="comment__images">
+                                            <img alt='' src="images/moi_2.jpg">
+                                        </div>
+
+                                        <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Safae EL HAJJI</a>
+                                        <p class="comment__date">today | 02:40</p>
+                                        <p class="comment__message">Bonne expérience ce jour en regardant le film malifique en 3D. Qualité irréprochable, personnel acceuillant. Je vous recommande vivement d'y aller.</p>
+                                        <a href='#' class="comment__reply">Répondre</a>
+                                    </div>
+
+                                    <div class="comment">
+                                        <div class="comment__images">
+                                            <img alt='' src="images/ilias.png">
+                                        </div>
+
+                                        <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Ilias EL ANSARI</a>
+                                        <p class="comment__date">01.05.2021 | 14:40</p>
+                                        <p class="comment__message">Superbe complexe cinématographique, à la pointe de la technologie, très apprécié des cinéphiles.</p>
+                                        <a href='#' class="comment__reply">Répondre</a>
+                                    </div>
+
+                                    <div class="comment comment--answer">
+                                        <div class="comment__images">
+                                            <img alt='' src="images/chay.jpg">
+                                        </div>
+
+                                        <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Chaymaa OUAKKA</a>
+                                        <p class="comment__date">today | 10:19</p>
+                                        <p class="comment__message">Megarama est un groupe de cinéma français ouvert ses portes au public à Rabat le 5 août. Il s'agit maintenant du plus grand cinéma multiplexe de Rabat avec 11 salles de projection offrant une bonne qualité de son
+                                            et d'image.</p>
+                                        <a href='#' class="comment__reply">Répondre</a>
+                                    </div>
+
+                                    <div class="comment comment--last">
+                                        <div class="comment__images">
+                                            <img alt='' src="images/oumnia.png">
+                                        </div>
+
+                                        <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Oumnia ANOUK</a>
+                                        <p class="comment__date"> 22.04.2021 | 12:31 </p>
+                                        <p class="comment__message">Des salles de projections de petite capacité offrent une très bonne ambiance pour visualiser vos films préférés. Les fauteuils disposent de deux accoudoirs ce qui vous permet d'être à l'aise..</p>
+                                        <a href='#' class="comment__reply">Répondre</a>
+                                    </div>
+
+                                    <div id='hide-comments' class="hide-comments">
+                                        <div class="comment">
+                                            <div class="comment__images">
+                                                <img alt='' src="Images/houssam.png">
+                                            </div>
+
+                                            <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Houssam ILLAOUI</a>
+                                            <p class="comment__date">27.03.2021 | 03:04</p>
+                                            <p class="comment__message">Style cinema americain tres conseille 😎.</p>
+                                            <a href='#' class="comment__reply">Répondre</a>
+                                        </div>
+
+                                        <div class="comment">
+                                            <div class="comment__images">
+                                                <img alt='' src="images/salim.png">
+                                            </div>
+
+                                            <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Salim REZOUK</a>
+                                            <p class="comment__date">07.02.2021 | 04:50</p>
+                                            <p class="comment__message">Une belle réalisation pour les cinéphiles de la capitale Rabat, malheureusement c'est fermé pour cause de la pandémie covid 19.</p>
+                                            <a href='#' class="comment__reply">Répondre</a>
+                                        </div>
+
+                                        <div class="comment">
+                                            <div class="comment__images">
+                                                <img alt='' src="images/abir.png">
+                                            </div>
+
+                                            <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Abir AFEJJAY</a>
+                                            <p class="comment__date">15.01.2021 | 17:30</p>
+                                            <p class="comment__message">Très beau cinéma bien entretenu les films sont a jours. J'aime beaucoup et conseille fortement.</p>
+                                            <a href='#' class="comment__reply">Répondre</a>
+                                        </div>
+
+                                        <div class="comment">
+                                            <div class="comment__images">
+                                                <img alt='' src="images/youssef.png">
+                                            </div>
+
+                                            <a href='#' class="comment__author"><span class="social-used fa fa-facebook"></span>Youssef HARGAL</a>
+                                            <p class="comment__date">02.01.2021 | 14:40</p>
+                                            <p class="comment__message">Juste magnifique 👏🏽👍🏽👌🏽.</p>
+                                            <a href='#' class="comment__reply">Répondre</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="comment-more">
+                                        <a href="#" class="watchlist">Voir plus...</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="map1">
+                        <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.5560432187117!2d-6.8476343851493855!3d34.00393542772245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76d3a19aceaa5%3A0x901ce12a03df4f0d!2sMegarama%20Arribat%20Center!5e0!3m2!1sfr!2sma!4v1621479100358!5m2!1sfr!2sma"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+        <footer class="footer-wrapper">
+            <section class="container">
+                <div class="col-xs-4 col-md-2 footer-nav">
+                    <ul class="nav-link">
+                        <li><a href="contact.html" class="nav-link__item">Contactez-nous</a></li>
+                        <li><a href=" " class="nav-link__item ">A propos de nous</a></li>
+                        <li><a href="#" class="nav-link__item">Termes d'utilisation</a></li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer-info">
+                        <p class="heading-special--small">Dream On Screen<br><span class="title-edition"> Dans les réseaux Sociaux</span></p>
+
+                        <div class="social">
+                            <a href='#' class="social__variant fa fa-facebook"></a>
+                            <a href='#' class="social__variant fa fa-twitter"></a>
+                            <a href='#' class="social__variant fa fa-instagram"></a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <p class="copy">&copy;Dream On Screen, 2021. Tous les droits sont réservés.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- JavaScript-->
+    <!-- jQuery 1.9.1-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js"><\/script>')
+    </script>
+    <!-- Migrate -->
+    <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- Bootstrap 3-->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- Mobile menu -->
+    <script src="js/jquery.mobile.menu.js"></script>
+    <!-- Select -->
+    <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+    <!-- Swiper slider -->
+    <script src="js/external/idangerous.swiper.min.js"></script>
+
+    <!-- Share buttons -->
+    <script type="text/javascript">
+        var addthis_config = {
+            "data_track_addressbar": true
+        };
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525fd5e9061e7ef0"></script>
+
+    <!--*** Google map  ***-->
+    <!--*** Google map infobox  ***-->
+    <script src="js/external/infobox.js"></script>
+
+    <!-- Form element -->
+    <script src="js/external/form-element.js"></script>
+    <!-- Form validation -->
+    <script src="js/form.js"></script>
+
+    <!-- Custom -->
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            init_Cinema();
+        });
+    </script>
+
+</body>
+
+</html>
