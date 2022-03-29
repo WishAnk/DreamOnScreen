@@ -1,5 +1,5 @@
 # DreamOnScreen
-site web de réseautage des cinémas au Maroc
+Site web de réseautage des cinémas au Maroc
 
 L’objectif principal de DREAM ON SCREEN est de créer un réseau des cinémas au Maroc en 
 rassemblant une variété des services qui permet de réaliser les opérations suivantes :
